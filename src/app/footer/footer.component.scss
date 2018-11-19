@@ -1,0 +1,26 @@
+@import "../../assets/scss/variables";
+
+.footer {
+  .wrap {
+    text-align: center;
+  }
+  .copyright {
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+  }
+  .copyright {
+    margin: 0 0 10px;
+  }
+  .socials-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    a {
+      font-family: $fa-font-path;
+      font-size: 18px;
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../assets/scss/variables";
+
+.header {
+  background: url("../../assets/images/header-background.svg") no-repeat;
+  background-size: cover;
+  font-size: $middle-font-size;
+  line-height: $middle-line-height;
+  color: $white;
+  text-align: center;
+  padding: 26px 0;
+  .logo-container {
+    padding: 0 0 27px;
+    text-align: center;
+    border-bottom: 2px solid $white;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 48px;
+  }
+  h1 {
+    font-size: $big-font-size;
+    line-height: $big-line-height;
+    margin: 0 0 20px;
+  }
+}
+
