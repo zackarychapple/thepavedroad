@@ -1,0 +1,35 @@
+@import "../../assets/scss/variables";
+
+.sponsors {
+  background: $grey;
+  padding: 50px 0 20px;
+  .list {
+    display: flex;
+    max-width: 856px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 0 30px;
+    li {
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 210px;
+      height: 210px;
+      margin: 0 2px 2px 0;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+  }
+}

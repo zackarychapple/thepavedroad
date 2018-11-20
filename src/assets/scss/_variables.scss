@@ -3,11 +3,13 @@
 $fa-font-path: '../node_modules/font-awesome/fonts';
 $main-font: 'Poppins', sans-serif;
 
-
 $small-font-size: 28px;
 $main-font-size: 32px;
 $middle-font-size: 40px;
 $big-font-size: 64px;
+
+$button-font-size: 14px;
+$button-line-height: 40px;
 
 $small-line-height: $small-font-size + 3px;
 $main-line-height: $main-font-size + 3px;
@@ -17,3 +19,5 @@ $big-line-height: $big-font-size + 5px;
 $white: #fff;
 $black: #000;
 $blue: #0a97d4;
+$blue-darker: #009DBF;
+$grey: #F2F2F2;
