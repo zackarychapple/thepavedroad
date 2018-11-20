@@ -1,0 +1,28 @@
+@import "variables";
+
+body {
+  font: #{$main-font-size}/#{$main-line-height} $main-font;
+  color: #131422;
+  margin: 0;
+  background: $white;
+  min-width: 320px;
+}
+
+.wrap {
+  box-sizing: border-box;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  a {
+    display: block;
+    height: 100%;
+    color: $white;
+  }
+}
+
+p {
+  margin: 0 0 20px;
+}
