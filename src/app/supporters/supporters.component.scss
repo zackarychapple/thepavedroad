@@ -1,8 +1,9 @@
 @import "../../assets/scss/variables";
 
 .supporters {
-  padding: 50px 0 20px;
+  padding: 60px 0 40px;
   .list {
+    padding: 5px 0 0;
     display: flex;
     justify-content: center;
     text-align: left;
@@ -11,6 +12,9 @@
       li {
         margin: 0 0 10px;
       }
+    }
+    a {
+      color: $black;
     }
   }
 }

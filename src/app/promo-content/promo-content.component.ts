@@ -79,7 +79,7 @@ export class PromoContentComponent {
               private modalService: BsModalService) { }
 
   @HostListener('window:scroll', ['$event'])
-  isScrollCentered(event?) {
+  isScrollCentered() {
     this.elements.map((element) => {
       const halfHeightElem = element.nativeElement.getBoundingClientRect().height / 2;
       const elementPosition = element.nativeElement.getBoundingClientRect().top - halfHeightElem;

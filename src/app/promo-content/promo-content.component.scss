@@ -69,9 +69,6 @@
       left: -119px;
     }
   }
-
-
-
   .road-container {
     display: flex;
     justify-content: center;
@@ -159,6 +156,7 @@
     margin: 0;
     width: 100%;
     transition: opacity 0.8s;
+    text-transform: uppercase;
     &:hover {
       background: $blue-darker;
       color: $white;

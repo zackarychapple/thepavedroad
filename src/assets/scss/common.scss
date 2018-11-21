@@ -1,4 +1,6 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome';
 @import "variables";
 
 body {
@@ -27,21 +29,30 @@ a {
   position: relative;
 }
 .logo {
+  display: flex;
+  justify-content: center;
   a {
     display: block;
     height: 100%;
     color: $white;
   }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .logo-placeholder {
+    background: $white;
+    width: 300px;
+    height: 100px;
+    &.black {background: $black;}
+  }
 }
-
-p {
-  margin: 0 0 20px;
-}
+p {margin: 0 0 20px;}
 h1 {
   font-size: $big-font-size;
   line-height: $big-line-height;
   color: $blue-darker;
-  margin: 0 0 20px;
+  margin: 0 0 30px;
   text-transform: uppercase;
 }
 h2 {
@@ -49,11 +60,12 @@ h2 {
   font-size: $main-font-size;
   line-height: $main-font-size;
   color: $black;
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   text-transform: uppercase;
 }
 .has-ill-border {
   position: relative;
+  margin: 0 0 56px;
   &:after {
     ackground: #7abcff;
     background: -moz-linear-gradient(left, #7abcff 2%, #60abf8 51%, #8cc63f 100%);
@@ -63,11 +75,11 @@ h2 {
     position: absolute;
     content: '';
     height: 5px;
-    width: 28%;
-    bottom: -12px;
+    bottom: -30px;
     left: 50%;
-    margin: 0 0 0 -14%;
+    margin: 0 0 0 -37px;
     border-radius: 30px;
+    width: 74px;
   }
   &.white:after {
     background: $white;
@@ -79,7 +91,7 @@ h2 {
   padding: 0;
 }
 .map-modal {
-  max-width: 862px;
+  max-width: 608px;
   font: 500 #{$main-font-size}/#{$main-line-height} $main-font;
   .modal-header {
     justify-content: center;

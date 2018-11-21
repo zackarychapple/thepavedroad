@@ -1,28 +1,31 @@
 @import "../../assets/scss/variables";
 
 .team {
-  padding: 50px 0 20px;
+  padding: 60px 0 22px;
   background: url("../../assets/images/meet-the-team-bkgd.svg") no-repeat;
   background-size: cover;
-  a {
-    color: $black;
-  }
-  h1 {
-    color: $white;
-  }
+  a {color: $black;}
+  h1 {color: $white;}
+  h2 {margin: 0 0 7px;}
   .list {
     display: flex;
-    padding: 0 0 30px;
-    li {
-      margin: 0 10px 10px;
-    }
+    justify-content: center;
+    padding: 11px 0 30px;
+    li {margin: 0 10px 10px;}
   }
-  .placeholder {
-    width: 300px;
-    height: 300px;
+  .image-box {
+    width: 200px;
+    height: 200px;
     background: $white;
-    display: block;
-    margin: 0 0 35px;
+    margin: 0 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
   .title {
     font-weight: 300;
