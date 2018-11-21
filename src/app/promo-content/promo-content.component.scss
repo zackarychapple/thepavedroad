@@ -1,77 +1,74 @@
-@import "../../assets/scss/variables";
+@import '../../assets/scss/variables';
 
 .promo-content {
   position: relative;
-  //.ill {
-  //  position: absolute;
-  //  background: url("../../assets/images/dot-med.svg") no-repeat;
-  //  width: 100px;
-  //  height: 100px;
-  //  top: 0;
-  //  right: 0;
-  //  &.second {
-  //    background: url("../../assets/images/landcluster-1.svg") no-repeat;
-  //    width: 500px;
-  //    height: 500px;
-  //    top: 0;
-  //    left: 0;
-  //  }
-  //  &.third {
-  //    background: url("../../assets/images/landcluster-2.svg") no-repeat;
-  //    width: 500px;
-  //    height: 500px;
-  //    top: 200px;
-  //    right: 0;
-  //  }
-  //  &.fourth {
-  //    width: 100px;
-  //    height: 100px;
-  //    top: 200px;
-  //    left: 0;
-  //  }
-  //  &.fifth {
-  //    background: url("../../assets/images/landcluster-2.svg") no-repeat;
-  //    width: 500px;
-  //    height: 500px;
-  //    top: 400px;
-  //    right: 0
-  //  }
-  //  &.sixth {
-  //    background: url("../../assets/images/landcluster-3.svg") no-repeat;
-  //    width: 500px;
-  //    height: 500px;
-  //    top: 600px;
-  //    left: 0;
-  //  }
-  //  &.sixth {
-  //    background: url("../../assets/images/dot-large.svg") no-repeat;
-  //    width: 500px;
-  //    height: 500px;
-  //    top: 600px;
-  //    right: 0;
-  //  }
-  //  &.seventh {
-  //    background: url("../../assets/images/dot-small.svg") no-repeat;
-  //    width: 200px;
-  //    height: 200px;
-  //    top: 700px;
-  //    right: 0;
-  //  }
-  //  &.eighth {
-  //    background: url("../../assets/images/landcluster-4.svg") no-repeat;
-  //    width: 200px;
-  //    height: 200px;
-  //    top: 900px;
-  //    right: 0;
-  //  }
-  //  &.ninth {
-  //    background: url("../../assets/images/dot-large.svg") no-repeat;
-  //    width: 200px;
-  //    height: 200px;
-  //    top: 900px;
-  //    right: 0;
-  //  }
-  //}
+  z-index: 1;
+  .ill {
+    position: absolute;
+    background: url("../../assets/images/dot-med.svg") no-repeat;
+    width: 116px;
+    height: 116px;
+    top: 58px;
+    right: 7%;
+    background-size: 100%;
+    &.second {
+      background-image: url("../../assets/images/landcluster-1.svg");
+      width: 506px;
+      height: 637px;
+      top: -50px;
+      left: 0;
+    }
+    &.third {
+      background-image: url("../../assets/images/landcluster-2.svg");
+      width: 542px;
+      height: 1010px;
+      top: 280px;
+      right: -41px;
+    }
+    &.fourth {
+      width: 100px;
+      height: 100px;
+      top: 700px;
+      left: 107px;
+    }
+    &.fifth {
+      width: 120px;
+      height: 120px;
+      top: 1316px;
+      right: 148px;
+    }
+    &.sixth {
+      background-image: url("../../assets/images/landcluster-3.svg");
+      width: 276px;
+      height: 899px;
+      top: 869px;
+      left: -21px;
+    }
+    &.seventh {
+      background-image: url("../../assets/images/dot-small.svg");
+      width: 80px;
+      height: 80px;
+      top: auto;
+      left: 126px;
+      bottom: 250px;
+    }
+    &.eighth {
+      background-image: url("../../assets/images/landcluster-4.svg");
+      width: 367px;
+      height: 618px;
+      top: auto;
+      bottom: 0;
+      right: -21px;
+    }
+    &.ninth {
+      background-image: url("../../assets/images/dot-large.svg");
+      width: 200px;
+      height: 200px;
+      top: auto;
+      bottom: -121px;
+      left: -119px;
+    }
+  }
 
 
 
@@ -81,8 +78,8 @@
   }
   .road-map {
     background: url("../../assets/images/road.svg") no-repeat 50% -1px;
-    min-height: 1536px;
-    width: 434px;
+    min-height: 1982px;
+    width: 560px;
     position: relative;
     background-size: 81%;
   }
@@ -90,11 +87,11 @@
     position: absolute;
     top: 5px;
     left: 50%;
-    margin: 0 0 0 -66px;
+    margin: 0 0 0 -76px;
     .btn-pic {
       background: url("../../assets/images/map-marker.svg") no-repeat 0 0;
-      width: 75px;
-      height: 75px;
+      width: 77px;
+      height: 77px;
       background-size: 100%;
       position: relative;
     }
@@ -103,39 +100,44 @@
       position: absolute;
       top: 0;
       left: 0;
+      z-index: -1;
     }
-    &.second {
-      top: 182px;
+    &:nth-child(2) {
+      top: 243px;
       margin: 0 0 0 22px;
     }
-    &.third {
-      top: 400px;
-      margin: 0 0 0 106px;
+    &:nth-child(3) {
+      top: 472px;
+      margin: 0 0 0 147px;
     }
-    &.fourth {
+    &:nth-child(4) {
       top: 618px;
       margin: 0 0 0 -85px;
     }
-    &.fifth {
-      top: 824px;
-      margin: 0 0 0 -203px;
+    &:nth-child(5) {
+      top: 853px;
+      margin: 0 0 0 -98px;
     }
-    &.sixth {
-      top: 941px;
+    &:nth-child(6) {
+      top: 1096px;
+      margin: 0 0 0 -251px;
     }
-    &.seventh {
-      margin: 0 0 0 19px;
-      top: 1080px;
+    &:nth-child(7) {
+      margin: 0 0 0 33px;
+      top: 1342px;
     }
-    &.eighth {
-      top: 1223px;
-      margin: 0 0 0 -2px;
+    &:nth-child(8) {
+      top: 1623px;
+      margin: 0 0 0 -99px;
     }
-    &.ninth {
-      margin: 0 0 0 -83px;
-      top: 1416px;
+    &:nth-child(9) {
+      margin: 0 0 0 -99px;
+      top: 1888px;
     }
     &.active {
+      .box {
+        z-index: 0;
+      }
       .btn {
         opacity: 1;
       }

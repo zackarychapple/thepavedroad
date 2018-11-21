@@ -10,6 +10,8 @@ import { TeamComponent } from './team/team.component';
 import { SupportersComponent } from './supporters/supporters.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,8 @@
 .sponsors {
   background: $grey;
   padding: 50px 0 20px;
+  z-index: 2;
+  position: relative;
   .list {
     display: flex;
     max-width: 856px;

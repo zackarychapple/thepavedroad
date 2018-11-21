@@ -1,13 +1,15 @@
 @import "../../assets/scss/variables";
 
 .header {
-  background: url("../../assets/images/header-background.svg") no-repeat;
+  background: url("../../assets/images/header-background.svg") no-repeat 50% 0;
   background-size: cover;
   font-size: $middle-font-size;
   line-height: $middle-line-height;
   color: $white;
   text-align: center;
   padding: 26px 0;
+  position: relative;
+  z-index: 2;
   .logo-container {
     padding: 0 0 27px;
     text-align: center;

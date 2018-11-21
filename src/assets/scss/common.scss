@@ -1,3 +1,4 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
 @import "variables";
 
 body {
@@ -7,7 +8,11 @@ body {
   background: $white;
   min-width: 320px;
 }
-
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   &:hover {
@@ -19,8 +24,8 @@ a {
   padding: 0 20px;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
-
 .logo {
   a {
     display: block;
@@ -47,11 +52,47 @@ h2 {
   margin: 0 0 20px;
   text-transform: uppercase;
 }
-.text-center {
-  text-align: center;
+.has-ill-border {
+  position: relative;
+  &:after {
+    ackground: #7abcff;
+    background: -moz-linear-gradient(left, #7abcff 2%, #60abf8 51%, #8cc63f 100%);
+    background: -webkit-linear-gradient(left, #7abcff 2%,#60abf8 51%,#8cc63f 100%);
+    background: linear-gradient(to right, #7abcff 2%,#60abf8 51%,#8cc63f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#8cc63f',GradientType=1 );
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 28%;
+    bottom: -12px;
+    left: 50%;
+    margin: 0 0 0 -14%;
+    border-radius: 30px;
+  }
+  &.white:after {
+    background: $white;
+  }
 }
 .no-styled-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.map-modal {
+  max-width: 862px;
+  font: 500 #{$main-font-size}/#{$main-line-height} $main-font;
+  .modal-header {
+    justify-content: center;
+  }
+  .close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    padding: 6px 10px;
+  }
+  h4 {
+    font: 500 #{$big-font-size}/#{$big-line-height} $main-font;
+    color: $blue-darker;
+    text-transform: uppercase;
+  }
 }
