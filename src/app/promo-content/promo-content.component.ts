@@ -93,11 +93,24 @@ export class PromoContentComponent {
     });
   }
 
-  openModal(template: TemplateRef<any>) {
+  openModal(template: TemplateRef<HTMLElement>) {
     this.modalRef = this.modalService.show(
       template,
       Object.assign(this.modalContent, { class: 'map-modal' })
     );
   }
 
+  toogleClass(event: MouseEvent & {target: Element}): void {
+    switch (event.target.parentElement.classList.contains('active')) {
+      case true:
+        this.renderer.removeClass(event.target.parentElement, 'active');
+        break;
+      case false:
+        this.renderer.addClass(event.target.parentElement, 'active');
+        break;
+      default:
+        this.renderer.removeClass(event.target.parentElement, 'active');
+    }
+  }
 }
+

@@ -14,18 +14,18 @@
         <div class="box">
           <button type="button" class="btn slide-right" (click)="openModal(template)">MEETING THE COMMUNITY</button>
           <ng-template #template>
-            <div class="modal-header border-0">
+            <div class="modal-header pb-0 border-0">
               <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
                 <span aria-hidden="true">&times;</span>
               </button>
               <h4 class="modal-title has-ill-border">{{stepContent.title}}</h4>
             </div>
-            <div class="modal-body text-center">
+            <div class="modal-body pt-0 text-center">
               <p>{{stepContent.text}}</p>
             </div>
           </ng-template>
         </div>
-        <div class="btn-pic"></div>
+        <div (click)="toogleClass($event)" class="btn-pic"></div>
       </div>
     </div>
   </div>
