@@ -1,7 +1,7 @@
-@import "../../assets/scss/variables";
+@import "../../../assets/scss/variables";
 
 .header {
-  background: url("../../assets/images/header-background.svg") no-repeat 50% 0;
+  background: url("../../../assets/images/header-background.svg") no-repeat 50% 0;
   background-size: cover;
   font-size: $middle-font-size;
   line-height: $middle-line-height + 5px;
