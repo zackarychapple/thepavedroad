@@ -9,6 +9,9 @@ body {
   margin: 0;
   background: $white;
   min-width: 320px;
+  @media (min-width: 768px) {
+    font: #{$desktop-main-font-size}/#{$desktop-main-line-height} $main-font;
+  }
 }
 .wrapper {
   position: relative;
@@ -20,13 +23,6 @@ a {
   &:hover {
     text-decoration: underline;
   }
-}
-.wrap {
-  box-sizing: border-box;
-  padding: 0 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
 }
 .logo {
   display: flex;
@@ -47,13 +43,23 @@ a {
     &.black {background: $black;}
   }
 }
-p {margin: 0 0 20px;}
+p {
+  margin: 0 0 10px;
+  @media (min-width: 768px) {
+    margin: 0 0 20px;
+  }
+}
 h1 {
   font-size: $big-font-size;
   line-height: $big-line-height;
   color: $blue-darker;
-  margin: 0 0 30px;
+  margin: 0 0 10px;
   text-transform: uppercase;
+  @media (min-width: 768px) {
+    margin: 0 0 30px;
+    font-size: $desktop-big-font-size;
+    line-height: $desktop-big-line-height;
+  }
 }
 h2 {
   font-weight: 500;
@@ -62,10 +68,17 @@ h2 {
   color: $black;
   margin: 0 0 15px;
   text-transform: uppercase;
+  @media (min-width: 768px) {
+    font-size: $desktop-main-font-size;
+    line-height: $desktop-main-font-size;
+  }
 }
 .has-ill-border {
   position: relative;
-  margin: 0 0 56px;
+  margin: 0 0 18px;
+  @media (min-width: 768px) {
+    margin: 0 0 56px;
+  }
   &:after {
     ackground: #7abcff;
     background: -moz-linear-gradient(left, #7abcff 2%, #60abf8 51%, #8cc63f 100%);
@@ -75,11 +88,17 @@ h2 {
     position: absolute;
     content: '';
     height: 5px;
-    bottom: -30px;
+    bottom: -10px;
     left: 50%;
-    margin: 0 0 0 -37px;
+    margin: 0 0 0 -25px;
     border-radius: 30px;
-    width: 74px;
+    width: 50px;
+    @media (min-width: 768px) {
+      height: 5px;
+      bottom: -30px;
+      margin: 0 0 0 -37px;
+      width: 74px;
+    }
   }
   &.white:after {
     background: $white;
@@ -93,6 +112,9 @@ h2 {
 .map-modal {
   max-width: 608px;
   font: 500 #{$main-font-size}/#{$main-line-height} $main-font;
+  @media (min-width: 768px) {
+    font: 500 #{$desktop-main-font-size}/#{$desktop-main-line-height} $main-font;
+  }
   .modal-header {
     justify-content: center;
   }
@@ -106,5 +128,8 @@ h2 {
     font: 500 #{$big-font-size}/#{$big-line-height} $main-font;
     color: $blue-darker;
     text-transform: uppercase;
+    @media (min-width: 768px) {
+      font: 500 #{$desktop-big-font-size}/#{$desktop-big-line-height} $main-font;
+    }
   }
 }

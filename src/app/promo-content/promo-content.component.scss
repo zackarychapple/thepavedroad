@@ -6,67 +6,115 @@
   .ill {
     position: absolute;
     background: url("../../assets/images/dot-med.svg") no-repeat;
-    width: 116px;
-    height: 116px;
-    top: 58px;
+    width: 62px;
+    height: 62px;
+    top: 38px;
     right: 7%;
     background-size: 100%;
+    @media (min-width: 768px) {
+      width: 116px;
+      height: 116px;
+      top: 58px;
+    }
     &.second {
       background-image: url("../../assets/images/landcluster-1.svg");
-      width: 506px;
-      height: 637px;
-      top: -50px;
+      width: 233px;
+      height: 295px;
+      top: -11px;
       left: 0;
+      @media (min-width: 768px) {
+        width: 506px;
+        height: 637px;
+        top: -50px;
+      }
     }
     &.third {
       background-image: url("../../assets/images/landcluster-2.svg");
-      width: 542px;
-      height: 1010px;
-      top: 280px;
+      width: 218px;
+      height: 421px;
+      top: 212px;
       right: -41px;
+      @media (min-width: 768px) {
+        width: 504px;
+        height: 940px;
+        top: 280px;
+        right: -41px;
+      }
     }
     &.fourth {
-      width: 100px;
-      height: 100px;
-      top: 700px;
-      left: 107px;
+      width: 65px;
+      height: 65px;
+      top: 452px;
+      left: 12px;
+      @media (min-width: 768px) {
+        width: 100px;
+        height: 100px;
+        top: 700px;
+        left: 107px;
+      }
     }
     &.fifth {
-      width: 120px;
-      height: 120px;
-      top: 1316px;
-      right: 148px;
+      display: none;
+      @media (min-width: 768px) {
+        width: 120px;
+        height: 120px;
+        top: 1316px;
+        right: 148px;
+        display: block;
+      }
     }
     &.sixth {
       background-image: url("../../assets/images/landcluster-3.svg");
-      width: 276px;
-      height: 899px;
-      top: 869px;
+      width: 153px;
+      height: 507px;
+      top: 603px;
       left: -21px;
+      @media (min-width: 768px) {
+        width: 276px;
+        height: 899px;
+        top: 869px;
+        left: -21px;
+      }
     }
     &.seventh {
       background-image: url("../../assets/images/dot-small.svg");
       width: 80px;
       height: 80px;
       top: auto;
-      left: 126px;
-      bottom: 250px;
+      left: 232px;
+      bottom: 433px;
+      @media (min-width: 768px) {
+        left: 126px;
+        bottom: 250px;
+
+      }
     }
     &.eighth {
       background-image: url("../../assets/images/landcluster-4.svg");
-      width: 367px;
-      height: 618px;
+      width: 190px;
+      height: 611px;
       top: auto;
-      bottom: 0;
+      bottom: -299px;
       right: -21px;
+      @media (min-width: 768px) {
+        width: 367px;
+        height: 618px;
+        bottom: 0;
+      }
     }
     &.ninth {
       background-image: url("../../assets/images/dot-large.svg");
-      width: 200px;
-      height: 200px;
+      width: 75px;
+      height: 75px;
       top: auto;
-      bottom: -121px;
-      left: -119px;
+      bottom: -42px;
+      left: -45px;
+      @media (min-width: 768px) {
+        width: 200px;
+        height: 200px;
+        bottom: -121px;
+        left: -119px;
+      }
     }
   }
   .road-container {
@@ -75,61 +123,163 @@
   }
   .road-map {
     background: url("../../assets/images/road.svg") no-repeat 50% -1px;
-    min-height: 1982px;
-    width: 560px;
+    min-height: 1272px;
+    width: 320px;
     position: relative;
-    background-size: 81%;
+    background-size: 91%;
+    @media (min-width: 768px) {
+      background-size: 81%;
+      width: 560px;
+      min-height: 1982px;
+    }
   }
   .step {
     position: absolute;
     top: 5px;
     left: 50%;
-    margin: 0 0 0 -76px;
+    margin: 0 0 0 -52px;
+    @media (min-width: 768px) {
+      margin: 0 0 0 -76px;
+    }
     .btn-pic {
       background: url("../../assets/images/map-marker.svg") no-repeat 0 0;
-      width: 77px;
-      height: 77px;
+      width: 58px;
+      height: 58px;
       background-size: 100%;
       position: relative;
+      @media (min-width: 768px) {
+        width: 77px;
+        height: 77px;
+      }
     }
     .box {
-      padding: 14px 0 0 17px;
+      padding: 12px 0 0 17px;
       position: absolute;
       top: 0;
       left: 0;
       z-index: -1;
+      @media (min-width: 768px) {
+        padding: 15px 0 0 17px;
+      }
     }
     &:nth-child(2) {
-      top: 243px;
+      top: 150px;
       margin: 0 0 0 22px;
+      .box {
+        padding: 12px 16px 0 0;
+        left: auto;
+        right: 0;
+        .btn {
+          padding: 0 31px 0 10px;
+        }
+      }
+      @media (min-width: 768px) {
+        top: 243px;
+        .box {
+          right: auto;
+          left: 0;
+          padding: 15px 0 0 17px;
+          .btn {
+            padding: 0 36px 0 50px;
+          }
+        }
+      }
     }
     &:nth-child(3) {
-      top: 472px;
-      margin: 0 0 0 147px;
+      top: 308px;
+      margin: 0 0 0 90px;
+      .box {
+        padding: 12px 16px 0 0;
+        left: auto;
+        right: 0;
+        .btn {
+          padding: 0 31px 0 10px;
+        }
+      }
+      @media (min-width: 768px) {
+        top: 472px;
+        margin: 0 0 0 147px;
+        .box {
+          padding: 15px 17px 0 0;
+          .btn {
+            padding: 0 50px 0 36px;
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        .box {
+          padding: 15px 0 0 17px;
+          left: 0;
+          right: auto;
+          .btn {
+            padding: 0 36px 0 50px;
+          }
+        }
+      }
     }
     &:nth-child(4) {
-      top: 618px;
-      margin: 0 0 0 -85px;
+      top: 428px;
+      margin: 0 0 0 -68px;
+      @media (min-width: 768px) {
+        top: 618px;
+        margin: 0 0 0 -85px;
+      }
     }
     &:nth-child(5) {
-      top: 853px;
-      margin: 0 0 0 -98px;
+      top: 562px;
+      margin: 0 0 0 -68px;
+      @media (min-width: 768px) {
+        top: 853px;
+        margin: 0 0 0 -98px;
+      }
     }
     &:nth-child(6) {
-      top: 1096px;
-      margin: 0 0 0 -251px;
+      top: 725px;
+      margin: 0 0 0 -166px;
+      @media (min-width: 768px) {
+        top: 1096px;
+        margin: 0 0 0 -251px;
+      }
     }
     &:nth-child(7) {
-      margin: 0 0 0 33px;
-      top: 1342px;
+      margin: 0 0 0 16px;
+      top: 867px;
+      .box {
+        padding: 12px 16px 0 0;
+        left: auto;
+        right: 0;
+        .btn {
+          padding: 0 31px 0 10px;
+        }
+      }
+      @media (min-width: 768px) {
+        margin: 0 0 0 33px;
+        top: 1342px;
+        .box {
+          left: 0;
+          right: auto;
+          padding: 15px 0 0 17px;
+          .btn {
+            padding: 0 36px 0 50px;
+          }
+        }
+      }
     }
     &:nth-child(8) {
-      top: 1623px;
-      margin: 0 0 0 -99px;
+      top: 1023px;
+      margin: 0 0 0 -51px;
+      @media (min-width: 768px) {
+        top: 1623px;
+        margin: 0 0 0 -99px;
+      }
     }
     &:nth-child(9) {
-      margin: 0 0 0 -99px;
-      top: 1888px;
+      margin: 0 0 0 -67px;
+      top: 1205px;
+      @media (min-width: 768px) {
+        margin: 0 0 0 -99px;
+        top: 1888px;
+      }
     }
     &.active {
       .box {
@@ -148,15 +298,21 @@
     -webkit-border-radius: 34px;
     -moz-border-radius: 34px;
     border-radius: 34px;
-    height: $button-line-height + 2px;
     white-space: nowrap;
     text-overflow: ellipsis;
     border: 2px solid $blue-darker;
-    padding: 0 36px 0 50px;
+    height: $button-line-height + 1px;
+    padding: 0 10px 0 25px;
     margin: 0;
     width: 100%;
     transition: opacity 0.8s;
     text-transform: uppercase;
+    @media (min-width: 768px) {
+      font-size: $desktop-button-font-size;
+      line-height: $desktop-button-line-height;
+      height: $desktop-button-line-height + 2px;
+      padding: 0 36px 0 50px;
+    }
     &:hover {
       background: $blue-darker;
       color: $white;

@@ -7,24 +7,37 @@
   line-height: $middle-line-height + 5px;
   color: $white;
   text-align: center;
-  padding: 31px 0 58px;
+  padding: 18px 0 5px;
   position: relative;
   z-index: 2;
+  @media (min-width: 768px) {
+    padding: 31px 0 58px;
+    font-size: $desktop-middle-font-size;
+    line-height: $desktop-middle-line-height;
+  }
   .logo-container {
-    padding: 0 0 27px;
+    padding: 0 0 19px;
     text-align: center;
     border-bottom: 2px solid $white;
     display: flex;
     justify-content: center;
-    margin: 0 0 80px;
+    margin: 0 0 14px;
+    @media (min-width: 768px) {
+      padding: 0 0 27px;
+      margin: 0 0 80px;
+    }
+
   }
   .text-container {
     max-width: 800px;
     margin: 0 auto;
   }
   h1 {
-    margin: 0 0 20px;
+    margin: 0 0 5px;
     color: $white;
+    @media (min-width: 768px) {
+      margin: 0 0 20px;
+    }
   }
 }
 

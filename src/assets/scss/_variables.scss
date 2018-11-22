@@ -4,17 +4,27 @@ $fa-font-path: '../node_modules/font-awesome/fonts';
 $main-font: 'Poppins', sans-serif;
 
 $small-font-size: 13px;
-$main-font-size: 16px;
-$middle-font-size: 18px;
-$big-font-size: 42px;
+$main-font-size: 14px;
+$middle-font-size: 16px;
+$big-font-size: 28px;
+$desktop-small-font-size: 13px;
+$desktop-main-font-size: 16px;
+$desktop-middle-font-size: 18px;
+$desktop-big-font-size: 42px;
 
-$button-font-size: 14px;
-$button-line-height: 40px;
+$button-font-size: 12px;
+$button-line-height: 30px;
+$desktop-button-font-size: 14px;
+$desktop-button-line-height: 40px;
 
-$small-line-height: $small-font-size + 3px;
+$small-line-height: $small-font-size + 2px;
 $main-line-height: $main-font-size + 6px;
-$middle-line-height: $middle-font-size + 10px;
-$big-line-height: $big-font-size + 6px;
+$middle-line-height: $middle-font-size + 8px;
+$big-line-height: $big-font-size + 4px;
+$desktop-small-line-height: $small-font-size + 3px;
+$desktop-main-line-height: $main-font-size + 6px;
+$desktop-middle-line-height: $middle-font-size + 10px;
+$desktop-big-line-height: $big-font-size + 6px;
 
 $white: #fff;
 $black: #000;
