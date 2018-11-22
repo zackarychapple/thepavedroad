@@ -1,8 +1,8 @@
-@import "../../assets/scss/variables";
+@import "../../../assets/scss/variables";
 
 .team {
   padding: 14px 0 3px;
-  background: url("../../assets/images/meet-the-team-bkgd.svg") no-repeat;
+  background: url("../../../assets/images/meet-the-team-bkgd.svg") no-repeat;
   background-size: cover;
   @media (min-width: 768px) {
     padding: 60px 0 22px;
