@@ -1,0 +1,135 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome';
+@import "variables";
+
+body {
+  font: #{$main-font-size}/#{$main-line-height} $main-font;
+  color: #131422;
+  margin: 0;
+  background: $white;
+  min-width: 320px;
+  @media (min-width: 768px) {
+    font: #{$desktop-main-font-size}/#{$desktop-main-line-height} $main-font;
+  }
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  a {
+    display: block;
+    height: 100%;
+    color: $white;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .logo-placeholder {
+    background: $white;
+    width: 300px;
+    height: 100px;
+    &.black {background: $black;}
+  }
+}
+p {
+  margin: 0 0 10px;
+  @media (min-width: 768px) {
+    margin: 0 0 20px;
+  }
+}
+h1 {
+  font-size: $big-font-size;
+  line-height: $big-line-height;
+  color: $blue-darker;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    margin: 0 0 30px;
+    font-size: $desktop-big-font-size;
+    line-height: $desktop-big-line-height;
+  }
+}
+h2 {
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: $main-font-size;
+  color: $black;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    font-size: $desktop-main-font-size;
+    line-height: $desktop-main-font-size;
+  }
+}
+.has-ill-border {
+  position: relative;
+  margin: 0 0 18px;
+  @media (min-width: 768px) {
+    margin: 0 0 56px;
+  }
+  &:after {
+    ackground: #7abcff;
+    background: -moz-linear-gradient(left, #7abcff 2%, #60abf8 51%, #8cc63f 100%);
+    background: -webkit-linear-gradient(left, #7abcff 2%,#60abf8 51%,#8cc63f 100%);
+    background: linear-gradient(to right, #7abcff 2%,#60abf8 51%,#8cc63f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#8cc63f',GradientType=1 );
+    position: absolute;
+    content: '';
+    height: 5px;
+    bottom: -10px;
+    left: 50%;
+    margin: 0 0 0 -25px;
+    border-radius: 30px;
+    width: 50px;
+    @media (min-width: 768px) {
+      height: 5px;
+      bottom: -30px;
+      margin: 0 0 0 -37px;
+      width: 74px;
+    }
+  }
+  &.white:after {
+    background: $white;
+  }
+}
+.no-styled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.map-modal {
+  max-width: 608px;
+  font: 500 #{$main-font-size}/#{$main-line-height} $main-font;
+  @media (min-width: 768px) {
+    font: 500 #{$desktop-main-font-size}/#{$desktop-main-line-height} $main-font;
+  }
+  .modal-header {
+    justify-content: center;
+  }
+  .close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    padding: 6px 10px;
+  }
+  h4 {
+    font: 500 #{$big-font-size}/#{$big-line-height} $main-font;
+    color: $blue-darker;
+    text-transform: uppercase;
+    @media (min-width: 768px) {
+      font: 500 #{$desktop-big-font-size}/#{$desktop-big-line-height} $main-font;
+    }
+  }
+}

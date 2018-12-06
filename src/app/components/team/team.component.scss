@@ -1,0 +1,61 @@
+@import "../../../assets/scss/variables";
+
+.team {
+  padding: 14px 0 3px;
+  background: url("../../../assets/images/meet-the-team-bkgd.svg") no-repeat;
+  background-size: cover;
+  @media (min-width: 768px) {
+    padding: 60px 0 22px;
+  }
+  a {color: $black;}
+  h1 {color: $white;}
+  h2 {
+    margin: 0 0 2px;
+    @media (min-width: 768px) {
+      margin: 0 0 7px;
+    }
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    padding: 11px 0 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+    @media (min-width: 768px) {
+      padding: 11px 0 30px;
+    }
+    li {
+      margin: 0 10px 7px;
+      @media (min-width: 768px) {
+        margin: 0 10px 10px;
+      }
+    }
+  }
+  .image-box {
+    width: 120px;
+    height: 120px;
+    background: $white;
+    margin: 0 auto 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    @media (min-width: 768px) {
+      margin: 0 0 24px;
+      width: 200px;
+      height: 200px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .title {
+    font-weight: 300;
+    font-style: italic;
+    color: $black;
+  }
+}

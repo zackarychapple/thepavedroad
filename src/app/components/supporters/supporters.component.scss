@@ -1,0 +1,41 @@
+@import "../../../assets/scss/variables";
+
+.supporters {
+  padding: 15px 0 5px;
+  @media (min-width: 768px) {
+    padding: 60px 0 40px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+    @media (min-width: 768px) {
+      text-align: left;
+      padding: 5px 0 0;
+    }
+    > li {
+      margin: 0 0 10px;
+      @media (min-width: 576px) {
+        max-width: 33.3%;
+        flex-direction: row;
+        margin: 0 8px 10px;
+      }
+      @media (min-width: 768px) {
+        margin: 0 25px 20px;
+      }
+      li {
+        margin: 0 0 5px;
+        @media (min-width: 768px) {
+          margin: 0 0 10px;
+        }
+      }
+    }
+    a {
+      color: $black;
+    }
+  }
+}

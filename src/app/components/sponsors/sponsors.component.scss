@@ -1,0 +1,56 @@
+@import "../../../assets/scss/variables";
+
+.sponsors {
+  background: $grey;
+  padding: 13px 0 5px;
+  z-index: 2;
+  position: relative;
+  @media (min-width: 768px) {
+    padding: 68px 0 42px;
+  }
+  .promo {
+    max-width: 568px;
+    display: block;
+    margin: 0 auto 15px;
+    @media (min-width: 768px) {
+      margin: 0 auto 30px;
+    }
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    max-width: 616px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 0 15px;
+    align-items: center;
+    @media (min-width: 768px) {
+      margin: 0 auto 30px;
+    }
+    li {
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100px;
+      height: 100px;
+      margin: 0 2px 2px 0;
+      @media (min-width: 768px) {
+        width: 150px;
+        height: 150px;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
