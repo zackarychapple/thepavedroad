@@ -26,13 +26,14 @@ export class PromoContentComponent {
       const elementPosition = element.nativeElement.getBoundingClientRect().top - halfHeightElem;
       // const startStep = window.innerHeight / 3.2;
       //const finishStep = window.innerHeight / 2.3;
-      const startStep = window.innerHeight / 3 + 200;
-      const finishStep = window.innerHeight / 3 - 200 ;
       // if (elementPosition > startStep  && elementPosition < finishStep) {
       //   this.renderer.addClass(element.nativeElement, 'active');
       // } else {
       //   this.renderer.removeClass(element.nativeElement, 'active');
       // }
+      const startStep = (window.innerWidth < 768 ) ? window.innerHeight / 3 + 100 : window.innerHeight / 3 + 200;
+      const finishStep = (window.innerWidth < 768 ) ? window.innerHeight / 3 - 100 : window.innerHeight / 3 - 200;
+
       if (elementPosition < startStep && elementPosition > finishStep) {
         this.renderer.addClass(element.nativeElement, 'active');
       } else {
