@@ -29,14 +29,21 @@
 
   }
   .text-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    p{
+      line-height: 30px;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
   }
   h1 {
     margin: 0 0 5px;
     color: $white;
+    letter-spacing: 7px;
+    line-height: 42px;
     @media (min-width: 768px) {
-      margin: 0 0 20px;
+      margin: 0 0 35px;
     }
   }
 }
