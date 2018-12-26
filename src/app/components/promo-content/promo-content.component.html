@@ -11,6 +11,7 @@
   <div class="road-container">
     <div class="road-map">
       <div class="step" *ngFor="let stepContent of modalContent" #step>
+        <div class="teaser-text" (click)="openModal(template)" >{{stepContent.text | slice:0:70}} ... <span>Read more</span></div>
         <div class="box">
           <button type="button" class="btn slide-right" (click)="openModal(template)">{{stepContent.title}}</button>
           <ng-template #template>

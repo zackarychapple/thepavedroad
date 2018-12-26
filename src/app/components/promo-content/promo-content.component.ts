@@ -23,8 +23,8 @@ export class PromoContentComponent {
     this.elements.map((element) => {
       const halfHeightElem = element.nativeElement.getBoundingClientRect().height / 2;
       const elementPosition = element.nativeElement.getBoundingClientRect().top - halfHeightElem;
-      const startStep = (window.innerWidth < 768 ) ? window.innerHeight / 3 + 100 : window.innerHeight / 3 + 200;
-      const finishStep = (window.innerWidth < 768 ) ? window.innerHeight / 3 - 100 : window.innerHeight / 3 - 200;
+      const startStep = (window.innerWidth < 768 ) ? window.innerHeight / 3 + 100 : window.innerHeight / 3 + 150;
+      const finishStep = (window.innerWidth < 768 ) ? window.innerHeight / 3 - 100 : window.innerHeight / 3 - 150;
       if (elementPosition < startStep && elementPosition > finishStep) {
         this.renderer.addClass(element.nativeElement, 'active');
       } else {
